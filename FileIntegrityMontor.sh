@@ -26,10 +26,6 @@ elif [[ $userOpt == "B" ]]; then
         fileHashDict[${Linearr[0]}]=${Linearr[1]}
     done < "./base.txt"
 
-    for key in "${fileHashDict[@]}"; do
-        echo $key
-    done
-
     while true; do
         sleep 1
         
